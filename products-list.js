@@ -5,7 +5,7 @@ function toggleFilterAttr(id) {
 }
 
 //  через властивість елемента
-const priceBtn = document.querySelector('button[onclick*="price-options"]');
+const priceBtn = document.querySelector("#price-button");
 priceBtn.onclick = function () {
     toggleFilterAttr('price-options');
 };
