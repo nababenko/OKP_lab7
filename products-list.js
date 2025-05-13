@@ -85,3 +85,15 @@ document.querySelector('.product_wrapper')?.addEventListener('click', function (
         document.getElementById('cart-list').appendChild(li);
     }
 });
+document.querySelector('.header-buttons')?.addEventListener('click', function (event) {
+    const button = event.target.closest('button');
+    if (!button) return;
+
+    const behavior = button.dataset.behavior;
+
+    if (behavior === 'showLikes') {
+        document.getElementById('likes-list')?.classList.toggle('visible');
+    } else if (behavior === 'showCart') {
+        document.getElementById('cart-list')?.classList.toggle('visible');
+    }
+});

@@ -303,7 +303,7 @@ ul{
     display: inline-block;
 }
 
-.btn-wrapper:hover .modal-list {
+.visible {
     display: block;
 }
 
